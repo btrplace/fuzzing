@@ -1,0 +1,8 @@
+The VM scheduler is the cornerstone of the good functioning of an IaaS cloud, as it is responsible for deploying the VMs to appropriate physical servers according to the SLAs and then reconfiguring the deployment.
+However, implementing a VM scheduler that is correct and behaves according to its
+documentation is difficult, as it requires very good understanding of the infrastructure management capabilities and the pre-conditions related to each reconfiguration action.
+This fact has led to defective implementations with severe consequences for both clients and providers. For instance, in Nova which is the VM scheduler of OpenStack, 8 bugs are currently open about correctness issues, despite an extensive quality management system. The same kind of bugs have been seen in the research oriented VM scheduler BtrPlace as well.
+The goal of this internship is to analyse bugs in VM schedulers and propose dedicated tools to discover them. The main objectives are therefore to:
+- to analyse existing bugs in commercial (OpenStack NOVA) but also in research oriented VM schedulers (BtrPlace),
+- to propose effective solutions to discover, categorize, evaluate and report bugs, and
+- to implement bug detecting tools for BtrPlace.
